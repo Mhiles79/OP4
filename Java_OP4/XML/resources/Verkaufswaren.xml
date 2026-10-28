@@ -1,0 +1,21 @@
+<!--  Document Type Definition: Kann zur Validierung des Dokumentes verwendet werden  -->
+<Verkaufswaren>
+    <Speise bezeichnung="Burger" preis="4.99">
+        <Zutaten>
+            <Zutat>Brötchen</Zutat>
+            <Zutat>Rindfleisch-Patties</Zutat>
+            <Zutat>Gurken</Zutat>
+            <Zutat>Ketchup</Zutat>
+        </Zutaten>
+    </Speise>
+    <Speise bezeichnung="Pizza Groß" preis="5.99">
+        <Zutaten>
+            <Zutat>Pizzateig</Zutat>
+            <Zutat>Tomatensoße</Zutat>
+            <Zutat>Käse</Zutat>
+            <Zutat>Salami</Zutat>
+        </Zutaten>
+    </Speise>
+    <Getränk bezeichnung="Cola" preis="1.49" füllmenge="500"/>
+    <Getränk bezeichnung="Apfelschorle" preis="1.29" füllmenge="500"/>
+</Verkaufswaren>

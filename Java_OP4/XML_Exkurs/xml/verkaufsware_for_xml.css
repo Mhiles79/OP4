@@ -1,0 +1,53 @@
+warenliste {
+    display: block;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    padding: 2rem;
+}
+
+ware {
+    display: block;
+    background: white;
+    border-left: 4px solid #e67e22;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+bezeichnung {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a3c5e;
+    margin-bottom: .4rem;
+}
+
+preis {
+    display: inline-block;
+    background: #1a3c5e;
+    color: white;
+    padding: .2rem .7rem;
+    border-radius: 12px;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+preis::after  { content: " €"; }
+preis::before { content: "💰 "; }
+
+bestand {
+    display: inline-block;
+    color: #27ae60;
+    font-weight: 600;
+}
+bestand::before { content: "📦 "; }
+bestand::after  { content: " Stk."; }
+
+beschreibung {
+    display: block;
+    color: #666;
+    font-size: .9rem;
+    margin-top: .5rem;
+    font-style: italic;
+}

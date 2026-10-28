@@ -1,0 +1,37 @@
+{
+  "produkte" : [ {
+    "type" : "physisch",
+    "id" : "P1",
+    "name" : "Java Buch",
+    "price" : 35,
+    "inStock" : true
+  }, {
+    "type" : "physisch",
+    "id" : "P2",
+    "name" : "XML Buch",
+    "price" : 25,
+    "inStock" : false
+  }, {
+    "type" : "physisch",
+    "id" : "P3",
+    "name" : "XSL Buch",
+    "price" : 14,
+    "inStock" : true
+  }, {
+    "type" : "digital",
+    "id" : "P4",
+    "name" : "EBook",
+    "price" : 5,
+    "inStock" : true,
+    "downloadUrl" : "https://irgendwo.de",
+    "groesseMB" : 12
+  }, {
+    "type" : "digital",
+    "id" : "P5",
+    "name" : "Game",
+    "price" : 65,
+    "inStock" : false,
+    "downloadUrl" : "https://irgendwas.de",
+    "groesseMB" : 120
+  } ]
+}

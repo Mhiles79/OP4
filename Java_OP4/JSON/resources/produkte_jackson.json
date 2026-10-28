@@ -1,0 +1,21 @@
+{
+  "produkte" : [ {
+    "type" : "physisch",
+    "id" : "P1",
+    "name" : "Java Buch",
+    "price" : 35,
+    "inStock" : true
+  }, {
+    "type" : "physisch",
+    "id" : "P2",
+    "name" : "XML Buch",
+    "price" : 25,
+    "inStock" : false
+  }, {
+    "type" : "physisch",
+    "id" : "P3",
+    "name" : "XSL Buch",
+    "price" : 14,
+    "inStock" : true
+  } ]
+}

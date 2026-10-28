@@ -1,0 +1,82 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --blau:   #1a3c5e;
+    --orange: #e67e22;
+    --gruen:  #27ae60;
+    --rot:    #c0392b;
+    --hell:   #ecf0f1;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #2c3e50;
+    padding: 2rem;
+}
+
+.kopf {
+    background: linear-gradient(135deg, var(--blau), #2980b9);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.kopf h1 { font-size: 1.8rem; }
+.kopf p  { opacity: .8; margin-top: .3rem; }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.karte {
+    background: white;
+    border-left: 4px solid var(--orange);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+.karte .zahl  { font-size: 1.4rem; font-weight: 700; color: var(--blau); }
+.karte .label { font-size: .78rem; color: #888; text-transform: uppercase; }
+
+.tabelle {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+table               { width: 100%; border-collapse: collapse; font-size: .95rem; }
+thead               { background: var(--blau); color: white; }
+th                  { padding: .9rem 1.2rem; text-align: left; font-size: .85rem; text-transform: uppercase; }
+td                  { padding: .8rem 1.2rem; border-bottom: 1px solid #ddd; }
+tbody tr:nth-child(even) { background: var(--hell); }
+tbody tr:hover      { background: #dce8f5; }
+tbody tr:last-child td   { border-bottom: none; }
+
+.badge { display: inline-block; padding: .2rem .6rem; border-radius: 12px; font-size: .76rem; font-weight: 600; text-transform: uppercase; }
+.badge[data-kat="Elektronik"]       { background: #d6eaf8; color: #1a5276; }
+.badge[data-kat="Haushaltsgeraete"] { background: #d5f5e3; color: #1e8449; }
+.badge[data-kat="Kueche"]           { background: #fdebd0; color: #935116; }
+.badge[data-kat="Sonstige"]         { background: #e8daef; color: #6c3483; }
+
+.preis        { font-weight: 700; }
+.preis.teuer  { color: var(--rot); }
+.preis.mittel { color: var(--orange); }
+.preis.guenstig { color: var(--gruen); }
+
+.bestand      { display: inline-flex; align-items: center; gap: .4rem; }
+.ampel        { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: #ccc; }
+.bestand.voll   .ampel { background: var(--gruen); }
+.bestand.mittel .ampel { background: var(--orange); }
+.bestand.leer   .ampel { background: var(--rot); }
+
+footer { margin-top: 1.5rem; text-align: center; font-size: .82rem; color: #999; }
+
+@media (max-width: 700px) {
+    body { padding: 1rem; }
+    .tabelle { overflow-x: auto; }
+    table { min-width: 480px; }
+}

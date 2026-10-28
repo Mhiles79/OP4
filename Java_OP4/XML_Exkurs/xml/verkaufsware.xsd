@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="PreisTyp">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+            <xs:minInclusive value="0.00"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="KategorieTyp">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Elektronik"/>
+            <xs:enumeration value="Haushaltsgeraete"/>
+            <xs:enumeration value="Kueche"/>
+            <xs:enumeration value="Sonstige"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="PreisElementTyp">
+        <xs:simpleContent>
+            <xs:extension base="PreisTyp">
+                <xs:attribute name="waehrung" type="xs:string" default="EUR"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="WareTyp">
+        <xs:sequence>
+            <xs:element name="bezeichnung"  type="xs:string"/>
+            <xs:element name="preis"        type="PreisElementTyp"/>
+            <xs:element name="bestand"      type="xs:nonNegativeInteger"/>
+            <xs:element name="beschreibung" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id"        type="xs:string"   use="required"/>
+        <xs:attribute name="kategorie" type="KategorieTyp" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="warenliste">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ware" type="WareTyp" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

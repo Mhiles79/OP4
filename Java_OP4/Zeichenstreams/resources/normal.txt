@@ -1,0 +1,2 @@
+These classes are usually combined with FileReader and FileWriter, which handle opening or creating the file.
+The buffered classes then make reading/writing faster by using a memory buffer.

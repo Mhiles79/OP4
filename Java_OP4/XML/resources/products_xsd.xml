@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    XSD-Validierung erfolgt über eine separate .xsd-Datei (books_xsd.xsd).
+    Im XML selbst gibt es keinen Verweis auf die XSD – das Schema wird im
+    Java-Code beim Parsen angegeben.
+    Vorteil:  echte Datentypen (xs:integer, xs:date …), mächtiger als DTD
+    Nachteil: aufwendiger zu schreiben
+-->
+<products>
+    <product id="A1">
+        <name>Laptop</name>
+        <price>999</price>
+        <inStock>true</inStock>
+    </product>
+    <product id="B2">
+        <name>Mouse</name>
+        <price>25</price>
+        <inStock>true</inStock>
+    </product>
+    <product id="C3">
+        <name>Monitor</name>
+        <price>350</price>
+        <inStock>false</inStock>
+    </product>
+</products>

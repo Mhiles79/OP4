@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product id="P1">
+        <name>Java Buch</name>
+        <price>35</price>
+        <inStock>true</inStock>
+    </product>
+    <product id="P2">
+        <name>XML Buch</name>
+        <price>25</price>
+        <inStock>false</inStock>
+    </product>
+    <product id="P3">
+        <name>XSL Buch</name>
+        <price>14</price>
+        <inStock>true</inStock>
+    </product>
+</products>

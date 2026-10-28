@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE warenliste SYSTEM "verkaufsware.dtd">
+<?xml-stylesheet type="text/xsl" href="verkaufsware.xsl"?>
+<!-- <?xml-stylesheet type="text/css" href="verkaufsware_for_xml.css"?> -->
+
+<warenliste>
+    <ware id="W001" kategorie="Elektronik">
+        <bezeichnung>Laptop ProBook 15</bezeichnung>
+        <preis waehrung="EUR">899.99</preis>
+        <bestand>42</bestand>
+        <beschreibung>Leistungsstarker Laptop für Büro und Heimgebrauch</beschreibung>
+    </ware>
+    <ware id="W002" kategorie="Elektronik">
+        <bezeichnung>Bluetooth-Kopfhörer</bezeichnung>
+        <preis waehrung="EUR">129.95</preis>
+        <bestand>138</bestand>
+        <beschreibung>Kabellose Kopfhörer mit Noise-Cancelling</beschreibung>
+    </ware>
+    <ware id="W003" kategorie="Haushaltsgeraete">
+        <bezeichnung>Kaffeemaschine Deluxe</bezeichnung>
+        <preis waehrung="EUR">249.00</preis>
+        <bestand>57</bestand>
+        <beschreibung>Vollautomatische Kaffeemaschine mit Milchaufschäumer</beschreibung>
+    </ware>
+    <ware id="W004" kategorie="Kueche">
+        <bezeichnung>Messer-Set Professional</bezeichnung>
+        <preis waehrung="EUR">79.90</preis>
+        <bestand>84</bestand>
+        <beschreibung>6-teiliges Messerset aus Edelstahl mit Holzblock</beschreibung>
+    </ware>
+</warenliste>

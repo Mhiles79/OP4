@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DTD (Document Type Definition) – direkt im XML eingebettet (Inline-DTD)
+    Definiert erlaubte Struktur: Elemente, deren Reihenfolge und Attribute.
+    Vorteil:  einfach, kein extra File nötig
+    Nachteil: keine Datentypen (alles ist Text), keine Namespaces, veraltet
+-->
+<!DOCTYPE books [
+    <!ELEMENT books (book)*>
+    <!ELEMENT book (title, author, year)>
+    <!ATTLIST book id CDATA #REQUIRED>
+    <!ELEMENT title    (#PCDATA)>
+    <!ELEMENT author   (#PCDATA)>
+    <!ELEMENT year     (#PCDATA)>
+]>
+<books>
+    <book id="1">
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <year>2008</year>
+    </book>
+    <book id="2">
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <year>2018</year>
+    </book>
+    <book id="3">
+        <title>The Pragmatic Programmer</title>
+        <author>David Thomas</author>
+        <year>1999</year>
+    </book>
+</books>

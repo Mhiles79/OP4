@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Bausteinpruefung/Bausteinpruefung.iml" filepath="$PROJECT_DIR$/../Bausteinpruefung/Bausteinpruefung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bytestreams/Bytestreams.iml" filepath="$PROJECT_DIR$/Bytestreams/Bytestreams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exkurse/Exkurse.iml" filepath="$PROJECT_DIR$/Exkurse/Exkurse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSON/JSON.iml" filepath="$PROJECT_DIR$/JSON/JSON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pfaed_Dateien/Pfaed_Dateien.iml" filepath="$PROJECT_DIR$/Pfaed_Dateien/Pfaed_Dateien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Pruefungsvorbereitung/Pruefungsvorbereitung.iml" filepath="$PROJECT_DIR$/../Pruefungsvorbereitung/Pruefungsvorbereitung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sockets/Sockets.iml" filepath="$PROJECT_DIR$/Sockets/Sockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stream_API/Stream_API.iml" filepath="$PROJECT_DIR$/Stream_API/Stream_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Swing_Client/Swing_Client.iml" filepath="$PROJECT_DIR$/../Swing_Client/Swing_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XML/XML.iml" filepath="$PROJECT_DIR$/XML/XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XML_Exkurs/XML_Exkurs.iml" filepath="$PROJECT_DIR$/XML_Exkurs/XML_Exkurs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zeichenstreams/Zeichenstreams.iml" filepath="$PROJECT_DIR$/Zeichenstreams/Zeichenstreams.iml" />
+    </modules>
+  </component>
+</project>

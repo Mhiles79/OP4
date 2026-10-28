@@ -1,0 +1,13 @@
+<!ELEMENT warenliste (ware+)>
+<!ELEMENT ware (bezeichnung, preis, bestand, beschreibung)>
+<!ELEMENT bezeichnung  (#PCDATA)>
+<!ELEMENT preis        (#PCDATA)>
+<!ELEMENT bestand      (#PCDATA)>
+<!ELEMENT beschreibung (#PCDATA)>
+
+<!ATTLIST ware
+    id ID #REQUIRED
+    kategorie (Elektronik|Haushaltsgeraete|Kueche|Sonstige) #REQUIRED>
+
+<!ATTLIST preis
+    waehrung CDATA "EUR">

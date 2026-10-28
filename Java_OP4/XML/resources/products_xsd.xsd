@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    XSD = XML Schema Definition  (W3C-Standard, mächtiger als DTD)
+    Definiert Struktur UND Datentypen.
+    xs:integer → nur ganze Zahlen erlaubt
+    xs:boolean → nur true/false erlaubt
+    xs:string  → beliebiger Text
+    use="required" → Attribut ist Pflicht
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Wurzelelement: enthält beliebig viele <product>-Elemente -->
+    <xs:element name="products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="product" type="ProductType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Typ für ein einzelnes <product> -->
+    <xs:complexType name="ProductType">
+        <xs:sequence>
+            <xs:element name="name"    type="xs:string"/>
+            <xs:element name="price"   type="xs:integer"/>   <!-- Kein Datentyp in DTD möglich! -->
+            <xs:element name="inStock" type="xs:boolean"/>   <!-- Kein Datentyp in DTD möglich! -->
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>
