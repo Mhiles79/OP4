@@ -37,6 +37,6 @@ Dieses Repository dokumentiert meinen Lernfortschritt, meine Übungsaufgaben und
 
 ## Autorin
 
-Maya Wende
+Mhiles
 
 GitHub: Mhiles79
